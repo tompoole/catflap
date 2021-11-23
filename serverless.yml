@@ -1,0 +1,13 @@
+service: catflap
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  profile: personal
+  region: eu-west-1
+
+functions:
+  alexa:
+    handler: alexa.handleRequest
+    events:
+      - alexaSkill: amzn1.ask.skill.abc-123 # Update this to be the Alexa app ID.

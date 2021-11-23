@@ -1,0 +1,57 @@
+@baseUrl = https://app.api.surehub.io/api
+@token = 
+@doorId = 
+@petId = 
+
+### Login
+POST https://app.api.surehub.io/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{"email_address":"","password":"","device_id":"267408935"}
+
+### Get Devices
+GET https://app.api.surehub.io/api/device
+Authorization: Bearer {{token}}
+
+### Get Pets
+https://app.api.surehub.io/api/pet
+Authorization: Bearer {{token}}
+
+### Door
+GET {{baseUrl}}/device/{{doorId}}
+Authorization: Bearer {{token}}
+
+### Door Status
+GET {{baseUrl}}/device/{{doorId}}/status
+Authorization: Bearer {{token}}
+
+### Door Control Status
+GET {{baseUrl}}/device/{{doorId}}/control
+Authorization: Bearer {{token}}
+
+### Pet Status
+GET {{baseUrl}}/pet/{{petId}}
+Authorization: Bearer {{token}}
+
+### Pet Status Position
+GET {{baseUrl}}/pet/{{petId}}/position
+Authorization: Bearer {{token}}
+
+
+### Set Position
+POST {{baseUrl}}/pet/{{petId}}/position
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{"where":2,"since":"2021-04-15 16:40:36"}
+
+
+### Control Door
+PUT {{baseUrl}}/device/{{doorId}}/control
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "locking": "4"
+}

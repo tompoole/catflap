@@ -1,0 +1,19 @@
+{
+  "name": "catflap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "alexa.js",
+  "dependencies": {
+    "ask-sdk": "^2.0.5",
+    "dayjs": "^1.10.4",
+    "dayjs-plugin-utc": "^0.1.2",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

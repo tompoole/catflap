@@ -1,0 +1,100 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cat flap",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LockDoor",
+                    "slots": [],
+                    "samples": [
+                        "to lock the cat flap",
+                        "to lock",
+                        "lock",
+                        "lock the cat flap"
+                    ]
+                },
+                {
+                    "name": "UnlockDoor",
+                    "slots": [],
+                    "samples": [
+                        "to open",
+                        "open the door",
+                        "to unlock",
+                        "unlock"
+                    ]
+                },
+                {
+                    "name": "LocatePet",
+                    "slots": [],
+                    "samples": [
+                        "where's the meow machine",
+                        "where is the kitty",
+                        "where's the pussy",
+                        "where is the cat",
+                        "is the cat outside",
+                        "is the cat inside",
+                        "where's the cat"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TogglePetLocation",
+                    "slots": [],
+                    "samples": [
+                        "change the cat location",
+                        "change location",
+                        "update location",
+                        "toggle location",
+                        "toggle cat location",
+                        "toggle the cats location",
+                        "update the cats location"
+                    ]
+                },
+                {
+                    "name": "GetDoorStatus",
+                    "slots": [],
+                    "samples": [
+                        "lock status",
+                        "to get door status",
+                        "is the door unlocked",
+                        "is the door locked"
+                    ]
+                },
+                {
+                    "name": "ToggleCurfew",
+                    "slots": [],
+                    "samples": [
+                        "toggle curfew"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "animal_name",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bella"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
